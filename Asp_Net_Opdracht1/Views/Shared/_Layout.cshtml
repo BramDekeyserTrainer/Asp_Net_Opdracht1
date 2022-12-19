@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Home</title>
+    <title>@ViewData["Title"] - BrabantPong</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/Asp_Net_Opdracht1.styles.css" asp-append-version="true" />
@@ -12,6 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
+                <!--Deze link brengt je terug naar de hoofdpagina.-->
                 <a class="navbar-brand" asp-area="" asp-controller="Index" asp-action="Index">BrabantPong</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -20,15 +21,19 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
+                            <!--Deze link brengt je terug naar de hoofdpagina.-->
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
+                            <!--Deze link brengt je naar de index van Spelers.-->
                             <a class="nav-link text-dark" asp-area="" asp-controller="Spelers" asp-action="Index">Spelers</a>
                         </li>
                         <li class="nav-item">
+                            <!--Deze link brengt je naar de index van Clubs.-->
                             <a class="nav-link text-dark" asp-area="" asp-controller="Clubs" asp-action="Index">Clubs</a>
                         </li>
                         <li class="nav-item">
+                            <!--Deze link brengt je naar de index van Niveaux.-->
                             <a class="nav-link text-dark" asp-area="" asp-controller="Niveaux" asp-action="Index">Niveaus</a>
                         </li>
                     </ul>
@@ -45,6 +50,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
+            /<!--Ik heb de gegenereerde footer aangepast.-->
             &copy; 2022 - BrabantPong - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
